@@ -1,0 +1,7 @@
+2024-10-06 20:51:25,039 - INFO - Number of entries in text_snippets: 10
+2024-10-06 20:51:25,040 - INFO - Size of FAISS index: 14001
+2024-10-06 21:08:51,684 - INFO - Processing question: Was sind Finanzdienstleistungen?
+2024-10-06 21:08:51,684 - INFO - Conversation history: []
+2024-10-06 21:08:51,788 - INFO - Context embedding shape: (1, 768)
+2024-10-06 22:44:25,537 - INFO - Number of entries in text_snippets: 10
+2024-10-06 22:44:25,537 - INFO - Size of FAISS index: 14001

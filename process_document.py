@@ -46,7 +46,7 @@ def create_faiss_index(embeddings):
 
 def main():
     start_time = time.time()
-    pdf_path = "/home/ubuntu/attachments/finanzdienstleistungen.pdf"
+    pdf_path = "finanzdienstleistungen.pdf"
 
     logging.info("Loading German language model")
     nlp = spacy.load("de_core_news_sm")
@@ -69,8 +69,8 @@ def main():
     index = create_faiss_index(embeddings)
 
     logging.info("Saving processed data")
-    np.save("/home/ubuntu/chatbot_project/embeddings.npy", embeddings)
-    faiss.write_index(index, "/home/ubuntu/chatbot_project/faiss_index.bin")
+    np.save("embeddings.npy", embeddings)
+    faiss.write_index(index, "faiss_index.bin")
 
     end_time = time.time()
     logging.info(f"Document processed and RAG system set up successfully in {end_time - start_time:.2f} seconds.")

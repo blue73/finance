@@ -31,11 +31,11 @@ app.add_middleware(
 )
 
 # Load the processed data
-embeddings = np.load("/home/ubuntu/chatbot_project/embeddings.npy")
-faiss_index = faiss.read_index("/home/ubuntu/chatbot_project/faiss_index.bin")
+embeddings = np.load("../../embeddings.npy")
+faiss_index = faiss.read_index("../../faiss_index.bin")
 
 # Load the text snippets
-with open("/home/ubuntu/chatbot_project/text_snippets.json", "r", encoding="utf-8") as f:
+with open("../../text_snippets.json", "r", encoding="utf-8") as f:
     text_snippets = json.load(f)
 
 # Log information about text_snippets and FAISS index
